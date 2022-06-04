@@ -1,6 +1,6 @@
 // For Ethereum, use the Infura endpoints
 export default function rpcConfig(infuraKey?: string) {
   return process.env.NODE_ENV === 'production'
-    ? 'https://polygon-rpc.com' // `https://mainnet.infura.io/v3/${infuraKey}`
-    : 'https://rpc-mumbai.matic.today'; // `https://rinkeby.infura.io/v3/${infuraKey}`
+    ? 'https://mainnet.infura.io/v3/feb6dc344527497cb3e4a5a04f598e75'
+    : 'https://rinkeby.infura.io/v3/feb6dc344527497cb3e4a5a04f598e75'
 }

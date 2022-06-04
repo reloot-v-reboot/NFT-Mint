@@ -1,22 +1,22 @@
 const projectConfig = {
-  nftName: 'SkullsInLove',
+  nftName: '我的NFT',
 
-  nftSymbol: 'SIL',
+  nftSymbol: '我的NFT SYMBOL',
 
   maxSupply: 10000,
 
   maxMintAmountPerTxn: 10,
 
-  mintCost: process.env.NODE_ENV === 'production' ? 100 : 0.01,
+  mintCost: process.env.NODE_ENV === 'production' ? 100 : 0.02,
 
   networkName:
-    process.env.NODE_ENV === 'production'
-      ? 'Polygon Mainnet' // 'Ethereum Mainnet'
-      : 'Mumbai Testnet', // 'Rinkeby Testnet'
+  process.env.NODE_ENV === 'production'
+    ?  'Ethereum Mainnet'
+    :  'Rinkeby Testnet',
 
-  chainName: 'MATIC', // 'ETH'
+  chainName: 'ETH',
 
-  chainId: process.env.NODE_ENV === 'production' ? 137 : 80001, // Ethereum (1), Rinkeby (4)
+  chainId: process.env.NODE_ENV === 'production' ? 1 : 4, // Ethereum (1), Rinkeby (4)
 
   siteDomain: 'www.yourdomain.com',
 
@@ -39,14 +39,12 @@ const projectConfig = {
   contractAddress:
     process.env.NODE_ENV === 'production'
       ? 'your_mainnet_contract_address'
-      : 'your_testnet_contract_address',
+      : '0xe30461961adc37543b580fbbd5b68528fd0207c0',
 
   scanUrl:
     process.env.NODE_ENV === 'production'
-      ? 'https://polygonscan.com/address/your_polygon_contract_address'
-      : 'https://mumbai.polygonscan.com/address/your_mumbai_contract_address',
-  // 'https://etherscan.io/address/your_ethereum_contract_address'
-  // 'https://rinkeby.etherscan.io/address/your_rinkeby_contract_address'
+      ? 'https://etherscan.io/address/your_ethereum_contract_address'
+      : 'https://rinkeby.etherscan.io/address/your_rinkeby_contract_address',
 };
 
 export default projectConfig;

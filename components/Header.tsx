@@ -99,7 +99,7 @@ export default function Header() {
                 aria-label={`Contract of ${projectConfig.nftName}`}
                 rel="noopener noreferrer"
                 target="_blank"
-                data-tip="PolygonScan"
+                data-tip="EtherScan"
                 data-for="header"
                 className="bg-gray-700 hover:bg-gray-600 rounded-full p-2"
               >

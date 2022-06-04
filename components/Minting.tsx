@@ -53,6 +53,11 @@ export default function Minting() {
         );
       } catch (error) {
         setIsPending(false);
+        // leothzhang
+        setMessage(
+          //`${error} `
+          `contract error`
+        );
       }
     }
   }
